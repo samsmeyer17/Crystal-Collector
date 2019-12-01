@@ -1,5 +1,10 @@
+* {
+  text-align: center;
+  color: white;
+}
+
 body {
-  background-image: "../images/ice_background.jpg";
+  background-image: url("https://live.staticflickr.com/3410/3289528934_562862eecb_z.jpg");
   background-repeat: repeat;
 }
 
@@ -7,35 +12,33 @@ body {
   overflow: auto;
 }
 
-#screen div {
+/* #screen div {
   float: left;
-}
+} */
 
 #title {
   width: 250px;
   padding: 4px;
   margin: 0 auto 10px;
   color: white;
-  background-color: blue;
 }
 
 #rules-area {
   width: 400px;
-  height: 400px;
+  height: auto;
   padding: 4px;
   margin: 0 auto 10px;
-  color: darkblue;
-  background-color: lightblue;
+  color: white;
 }
 
 #random-area {
   width: 200px;
   height: auto;
   padding: 4px;
-  font-size: 3vw;
+  font-size: 7vw;
   margin: 0 auto  0px;
-  color: purple;
-  background-color: mediumseagreen;
+  color: white;
+  clear: both;
 }
 
 #score-area {
@@ -44,37 +47,39 @@ body {
   padding: 4px;
   margin: 0 auto 10px;
   color: ghostwhite;
-  background-color: darkcyan;
 }
 
 #score-title {
   width: 210px;
   padding: 4px;
   margin: 0 auto 10px;
-  color: darkblue;
+  color:white;
+  text-align: center;
 }
 
 .crystals-button {
   display: inline;
+  
 }
 
 .crystal-img {
   width: 80px;
   height: 80px;
   cursor: pointer;
+  margin: 0 3px;
   background-color: white;
   border: solid;
-  border-color: lightblue;
 }
 
 #score-number {
-  font-size: 3vw;
+  font-size: 6vw;
+  margin: 0 auto;
 }
 
 #win-area {
-  height: 100px;
-  padding: 4px;
-  margin-bottom: 10px;
-  margin-left: 10px;
-  background-color: aqua;
+  height: auto;
+  padding: 0px 4px 0px 4px;
+  clear: both;
+  margin: 0 auto;
+  color: white;
 }
