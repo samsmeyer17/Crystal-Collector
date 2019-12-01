@@ -5,7 +5,7 @@ $(document).ready(function() {
   var yourMatchingNumber = 0;
 
   // Generates the random "target number" we will try to reach.
-  var randomNum = randomNumGen();
+  var target = randomNumGen();
 
   // Setting up our starting variables.
   var wins = 0;
@@ -47,8 +47,8 @@ $(document).ready(function() {
     // Generate random crystal values.
     crystals = randomNumCrystals();
     // Generate a random target number and render it to the page.
-    randomNum = randomNumGen();
-    $("#random-area").text(randomNum);
+    target = randomNumGen();
+    $("#random-area").text(target);
   }
 
   // Function that handles updating the page.
@@ -121,14 +121,14 @@ $(document).ready(function() {
 
     // Check to see if we have won or lost.
     // If our current guess number equals the target number..
-    if (yourMatchingNumber === randomNum) {
+    if (yourMatchingNumber === target) {
       // Increment wins, restart the game, and update the page.
       wins++;
       setGame();
       updateDom(true);
     }
     // If our guess number exceeded our target number...
-    else if (yourMatchingNumber > randomNum) {
+    else if (yourMatchingNumber > target) {
       // Increment losses, restart the game, and update the page.
       losses++;
       setGame();
